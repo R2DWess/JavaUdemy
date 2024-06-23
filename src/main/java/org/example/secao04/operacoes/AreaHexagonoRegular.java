@@ -1,4 +1,4 @@
-package org.example.operacoes;
+package org.example.secao04.operacoes;
 
 import java.util.Scanner;
 

@@ -1,8 +1,8 @@
-package org.example.operacoes;
+package org.example.secao04.operacoes;
 
 import java.util.Scanner;
 
-public class AreaTriangulo {
+public class AreaRetangulo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,8 +11,9 @@ public class AreaTriangulo {
 
         System.out.println("Digite o valor da altura: ");
         double h = sc.nextDouble();
-        double area = (b * h) /2;
 
-        System.out.println("A área do triângulo é: " + area);
+        double area = b * h;
+
+        System.out.println("O valor da área do Retangulo é: " + area);
     }
 }
