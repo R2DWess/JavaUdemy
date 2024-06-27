@@ -1,7 +1,5 @@
 package org.example.secao05.exercicios;
 
-import java.awt.image.TileObserver;
-import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 
