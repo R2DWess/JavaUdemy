@@ -1,4 +1,4 @@
-package org.example.secao08.introducaoOrientacaoObjetos.exercicio;
+package org.example.secao08.exercicio01;
 
 public class Funcionario {
 

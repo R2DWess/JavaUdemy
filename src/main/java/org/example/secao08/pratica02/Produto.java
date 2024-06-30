@@ -1,4 +1,4 @@
-package org.example.secao08.introducaoOrientacaoObjetos.pratica02;
+package org.example.secao08.pratica02;
 
 public class Produto {
 

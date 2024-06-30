@@ -1,6 +1,5 @@
-package org.example.secao08.introducaoOrientacaoObjetos.pratica02;
+package org.example.secao08.pratica02;
 
-import java.security.ProtectionDomain;
 import java.util.Locale;
 import java.util.Scanner;
 

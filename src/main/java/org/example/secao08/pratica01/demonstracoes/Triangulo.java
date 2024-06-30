@@ -1,4 +1,4 @@
-package org.example.secao08.introducaoOrientacaoObjetos.pratica01.demonstracoes;
+package org.example.secao08.pratica01.demonstracoes;
 
 public class Triangulo {
 
