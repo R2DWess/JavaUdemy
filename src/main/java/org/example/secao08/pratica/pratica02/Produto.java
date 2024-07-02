@@ -2,31 +2,65 @@ package org.example.secao08.pratica.pratica02;
 
 public class Produto {
 
-    // Declaração de atributos
-    public String nome;
-    public double preco;
-    public int quantidade;
+    private String name;
+    private double price;
+    private int quantity;
 
-    public double totalValueInStock(){
-        return preco * quantidade;
-
+    public Produto() {
+        this.quantity = 0;
     }
 
-    public void addProdutos(int quantidade){
-        this.quantidade += quantidade;
+    public Produto(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
     }
 
-    public void removeProdutos(int quantidade){
-        this.quantidade -= quantidade;
+    public Produto(String name, double price) {
+        this.name = name;
+        this.price = price;
+        this.quantity = 0;
     }
 
-    public String toString(){
-        return nome
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity(){
+        return quantity;
+    }
+
+    public double totalValueInStock() {
+        return price * quantity;
+    }
+
+    public void addProducts(int quantity) {
+        this.quantity += quantity;
+    }
+
+    public void removeProducts(int quantity) {
+        this.quantity -= quantity;
+    }
+
+    public String toString() {
+        return name
                 + ", $ "
-                + String.format("%.2f", preco)
+                + String.format("%.2f", price)
                 + ", "
-                + quantidade
+                + quantity
                 + " units, Total: $ "
                 + String.format("%.2f", totalValueInStock());
-}
+    }
 }

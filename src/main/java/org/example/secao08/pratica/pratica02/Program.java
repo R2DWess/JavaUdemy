@@ -7,35 +7,34 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
-        Produto produto = new Produto();
-        System.out.println("Insira a data do produto: ");
-        System.out.println("Nome: ");
+        System.out.println("Enter product data:");
+        System.out.print("Name: ");
+        String name = sc.nextLine();
+        System.out.print("Price: ");
+        double price = sc.nextDouble();
+        Produto product = new Produto(name, price);
 
-        produto.nome = sc.nextLine();
-        System.out.print("Preço: ");
-
-        produto.preco = sc.nextDouble();
-        System.out.println("Quantidade em estoque: ");
-        produto.quantidade = sc.nextInt();
-
-        System.out.println();
-        System.out.println("Dados do produto: " + produto);
+        product.setName("Computer");
+        System.out.println("Updated name: " + product.getName());
+        product.setPrice(1200.00);
+        System.out.println("Updated price: " + product.getPrice());
 
         System.out.println();
-        System.out.println("Insira o numero de produtos para adicionar no estoque: ");
-        int quantidade = sc.nextInt();
-        produto.addProdutos(quantidade);
+        System.out.println("Stored product: " + product);
+        System.out.print("Enter the number of products to add to stock: ");
+        int quantity = sc.nextInt();
+        product.addProducts(quantity);
 
         System.out.println();
-        System.out.println("Dados atualizados: " + produto);
+        System.out.println("Updated data: " + product);
 
         System.out.println();
-        System.out.println("Insira o numero de produtos para serem removidos no estoque: ");
-        quantidade = sc.nextInt();
-        produto.removeProdutos(quantidade);
+        System.out.print("Enter the number of products to remove from stock: ");
+        quantity = sc.nextInt();
+        product.removeProducts(quantity);
 
         System.out.println();
-        System.out.println("Dados atualizados: " + produto);
+        System.out.println("Updated data: " + product);
 
         sc.close();
     }
